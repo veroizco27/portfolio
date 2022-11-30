@@ -6,7 +6,7 @@ toggle_open.addEventListener('click', toggleMenu);
 toggle_close.addEventListener('click',toggleMenu);
 
 function toggleMenu(){
-    menu.classList.toggle('show-menu');
+menu.classList.toggle('show-menu');
 }
 
 if(menu.classList.contains('show-menu')) {

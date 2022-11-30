@@ -103,17 +103,17 @@ color: #ff6a88;
 .donwload-cv{
     padding: 10px 20px;
     background-color: #ee9ca7;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(252, 144, 222, 0.69);
+    box-shadow: 1px 3px 11px -5px rgba(71, 9, 57, 0.69);
 }
 
 .donwload-cv:hover{
-    background-color: #DDD6F3;
+    background-color: #df7de8;
     box-shadow: none;
 }
 
@@ -167,9 +167,9 @@ font-size: 50px;
 .portfolio .container {
     display: flex;
     width: 80vw;
-    height: 80vh;
     margin: 0 auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card__tittle{
@@ -204,7 +204,7 @@ font-size: 50px;
     }
  .card .project-details a{
 text-decoration: none;
-color: #Ffff;
+color: rgb(214, 42, 85);
 text-transform: uppercase;
     }
 .container h2 {
@@ -218,9 +218,10 @@ text-transform: uppercase;
     justify-content: center;
     margin-top: 1em;
 }
-.project-details-button{
-   align-items: center;
+.card .project-details button{
+ align-items: center;
 }
+
 .contact-headings h2{
 font-size: 3.5em;
 color: #Ffff;
@@ -395,6 +396,7 @@ padding: 1.5em;
     .show-menu{
      transform: translateX(0%);
      transition: all .5s ease-in-out;
+     cursor: pointer;
     }
     .Menu li {
      margin: 1em;
@@ -410,10 +412,9 @@ padding: 1.5em;
         font-size: 1.7em;
         display: none;
     }
-    .main {
+    .main,.about {
      display: flex;
      flex-direction: column-reverse;
-     justify-content: center;
     }
     .info-content__p{
         display: none;
@@ -438,5 +439,13 @@ padding: 1.5em;
       }
       .donwload-cv{
         display: none;
+      }
+     .contact-section  {
+     flex-direction: column;
+    }
+  .contact-section img {
+  width: min(70%, 350px);
+  height: auto;
+ margin: 4em;
       }
   }
